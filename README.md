@@ -26,3 +26,4 @@ because all of the "friend"-related complexity is hidden away within the user mo
 For example, if the above architecture changed such that best friendship was determined by the highest "friendship" value instead of a boolean `best` flag, the "two-dots" code would need to be changed *everywhere*, but the first snippet, which obeys the Law of Demeter, hides that complexity in the `User#best_friend` method, whose definition can be changed without having to track down and update every single usage.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/displaying-associations-rails-lab'>Displaying Associations Data Lab</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>PHRG Displaying Associations Rails</p>
