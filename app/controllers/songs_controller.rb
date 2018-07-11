@@ -1,12 +1,11 @@
+# frozen_string_literal: true
+
 class SongsController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def show
-  end
+  def show; end
 
-  def new
-  end
+  def new; end
 
   def create
     @song = Song.new(song_params)
@@ -41,10 +40,9 @@ class SongsController < ApplicationController
     redirect_to songs_path
   end
 
-  private
+private
 
   def song_params
     params.require(:song).permit(:title)
   end
 end
-
