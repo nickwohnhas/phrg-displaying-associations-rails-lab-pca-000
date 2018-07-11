@@ -1,9 +1,9 @@
-class ArtistsController < ApplicationController
-  def index
-  end
+# frozen_string_literal: true
 
-  def show
-  end
+class ArtistsController < ApplicationController
+  def index; end
+
+  def show; end
 
   def new
     @artist = Artist.new
@@ -42,7 +42,7 @@ class ArtistsController < ApplicationController
     redirect_to artists_path
   end
 
-  private
+private
 
   def artist_params
     params.require(:artist).permit(:name)
