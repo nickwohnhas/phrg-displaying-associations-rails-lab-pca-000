@@ -10,6 +10,8 @@ AllCops:
     - 'db/schema.rb'
     - 'bin/*'
     - 'config/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
 
 
 Layout/AccessModifierIndentation:
